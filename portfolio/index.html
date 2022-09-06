@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f97a4936d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img class="logo_" src="logoo.jpg" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I am <span>Shivam</span><br> Maurya from India</h1>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abour-col-1">
+                    <img src="aa.jpeg" alt="">
+
+
+
+                </div>
+                <div class="abour-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated individual who is responsible towards his work and produce high standards of
+                        work.
+
+                        I am a software developer with strong willingness to exhibit proficiency in solving problems
+                        with my coding skills.
+
+                        I have good programming skills with good command on data structures and algorithms and a decent
+                        knowledge of core computer science subjects.
+
+                        I am an excellent team worker. I find it easy to connect with peoples. I have a good leadership
+                        skills, during my time I was a team leader of various group activities.
+
+                        As my hobby, I love teaching things to people. I love to go for a gym for physical fitness.
+
+                        Skills: | C/C++ | Data Structures and Algorithms | Full stack Web Development | Javascript |
+                        React |NodeJS.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web app with material UI</li>
+                            <li><span>Web development</span><br>Website design with html,css and js</li>
+                            <li><span>Web App development</span><br>Devoloping web apps with react</li>
+
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Build netfix clone project fully responsive.</li>
+                            <li><span>2021-2022</span><br>Build javascript games and portfolio website.</li>
+
+
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>JSS Academy of Technical Education,NOIDA <br>GPA 8.5</li>
+                            <li><span>2017-2019</span><br>12th from RNTSSS <br>94.2%</li>
+                            <li><span>2015-2017</span><br>10th from RNTSSS <br>10 CGPA </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- -------------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I code website and design with help of html,css,javascript,bootstrap and reactjs.
+                        HTML is used for designing the skeleton of the website. CSS is used to decorate and style
+                        website
+                        with css properties. Javascript is used to provide functanality to website such as
+                        events.Bootstrap
+                        makes our work of website design with tempelates.Reactjs is javacript library used to enhance
+                        design
+                        and make website responsive with less line of codes.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>The user interface (UI) is the space where interactions between humans and machines occur. UI is
+                        an integral aspect of user experience (UX) that consists of two major parts: visual design,
+                        which conveys the look and feel of a product; and interaction design, which is the functional
+                        and logical organization of elements. The goal of user interface design is to create a user
+                        interface that makes it easy, efficient, and enjoyable for users to interact with a product.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web App Design</h2>
+                    <p>A Web application (Web app) is an application program that is stored on a remote server and
+                        delivered over the Internet through a browser interface. Web services are Web apps by definition
+                        and many, although not all, websites contain Web apps. According to Web.AppStorm editor Jarel
+                        Remick, any website component that performs some function for the user qualifies as a Web app.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix clone app</h3>
+                        <p>This app contain list of movies with its trailer</p>
+                        <a href="https://netflix-clone-6b4ce.web.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Shopping app</h3>
+                        <p>This app connect the world</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>This app connect the world</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See More</a>
+        </div>
+    </div>
+    <!-- ---------contact us-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shivam675maur@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6307889540</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/thissupershivam" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/thissupershivam" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/thissupershivam/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-maurya-29a059207/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Shivam</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXvETRtv06WOD2eGMgCZ3Sctg8-vqBrFZMUB3AyQt_C3OP1D5wEP_pgTsmRQWOythL8g/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Succesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
